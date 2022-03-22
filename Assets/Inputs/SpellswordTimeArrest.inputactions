@@ -38,6 +38,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "FireLunge",
+                    "type": "Button",
+                    "id": "7b0f5eca-c6ad-4be2-918f-092298c53c24",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "b1cf87bf-0f13-4052-aaab-611a10d2aa96",
@@ -185,7 +193,7 @@
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard&Mouse",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -198,6 +206,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0837f6cf-da3f-4105-b5be-1d254854d251",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "FireLunge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

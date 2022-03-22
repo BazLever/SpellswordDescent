@@ -279,9 +279,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2897895541896062255}
+  - component: {fileID: 2897895541896062248}
   - component: {fileID: 2897895541896062254}
   - component: {fileID: 2897895541896062253}
-  - component: {fileID: 2897895541896062248}
   - component: {fileID: 2897895541896062249}
   m_Layer: 8
   m_Name: Player
@@ -307,6 +307,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2897895541896062248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2897895541896062252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 898301ebcf55f1f428c61551d34371dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMoveSpeed: 16
+  playerTurnSpeed: 30
+  turnSpeedMultiplier: 10
+  gravity: 5
+  jumpHeight: 2
+  swordAttackLength: 0.3
+  playerLungeSpeed: 0
+  playerDecellerateSpeed: 0
+  magicMissile: {fileID: 8592180145363459237, guid: b6cdb2d45154fed429f9a86c20f0dba1, type: 3}
+  playerCam: {fileID: 2897895541425755805}
+  groundCheck: {fileID: 2897895541096505947}
+  swordHitbox: {fileID: 2897895541461148076}
+  deathCam: {fileID: 2262891859421716424, guid: 2de86c9792023ae499c4fe8c254c5c07, type: 3}
+  groundDistance: 1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 65
+  swordMask:
+    serializedVersion: 2
+    m_Bits: 512
+  grounded: 1
+  velocity: {x: 0, y: 0}
 --- !u!143 &2897895541896062254
 CharacterController:
   m_ObjectHideFlags: 0
@@ -355,37 +389,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &2897895541896062248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2897895541896062252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 898301ebcf55f1f428c61551d34371dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMoveSpeed: 16
-  playerTurnSpeed: 30
-  turnSpeedMultiplier: 10
-  gravity: 5
-  jumpHeight: 2
-  swordAttackLength: 0.3
-  magicMissile: {fileID: 8592180145363459237, guid: b6cdb2d45154fed429f9a86c20f0dba1, type: 3}
-  playerCam: {fileID: 2897895541425755805}
-  groundCheck: {fileID: 2897895541096505947}
-  swordHitbox: {fileID: 2897895541461148076}
-  deathCam: {fileID: 2262891859421716424, guid: 2de86c9792023ae499c4fe8c254c5c07, type: 3}
-  groundDistance: 1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 65
-  swordMask:
-    serializedVersion: 2
-    m_Bits: 512
-  grounded: 1
 --- !u!54 &2897895541896062249
 Rigidbody:
   m_ObjectHideFlags: 0
