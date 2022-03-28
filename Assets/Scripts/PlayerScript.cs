@@ -183,7 +183,7 @@ public class PlayerScript : MonoBehaviour
 
 
         //Velocity calcs
-
+        /*
         if (velocity.x > 0.2)
         {
             velocity.x -= playerDecellerateSpeed * Time.deltaTime;
@@ -209,7 +209,7 @@ public class PlayerScript : MonoBehaviour
         {
             velocity.y = 0f;
         }
-
+        */
         Debug.Log(gravityY);
     }
 
