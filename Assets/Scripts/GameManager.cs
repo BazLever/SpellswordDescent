@@ -26,12 +26,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        UpdateUI();
     }
 
     public void OnRestart()
     {
-       // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+       SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void UpdateUI()

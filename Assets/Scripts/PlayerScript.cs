@@ -22,6 +22,9 @@ public class PlayerScript : MonoBehaviour
     public float gravity;
     public float jumpHeight = 5f;
     public float swordAttackLength = 0.3f;
+    public float mass = 3f;
+    public float lungeForce = 10f;
+    public float lungeAttackTime;
 
     [Header("Objects")]
     //PlayerObjects
@@ -38,7 +41,7 @@ public class PlayerScript : MonoBehaviour
     public LayerMask swordMask;
 
     bool jumped;
-
+    bool lunging;
 
     bool swordAttack;
     float swordDelta;
@@ -50,6 +53,10 @@ public class PlayerScript : MonoBehaviour
     float groundedTimer;
     float groundedTimerDelta;
     float xRotation;
+
+    float lungeATDelta;
+
+    Vector3 impact = Vector3.zero;
 
 
     void Start()
@@ -97,6 +104,25 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
+
+        if(impact.magnitude > 0.2f)
+        {
+            charController.Move(impact * Time.deltaTime);
+            impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+        }
+
+        if (lunging)
+        {
+            swordHitbox.SetActive(true);
+            lungeATDelta += Time.deltaTime;
+            if (lungeATDelta >= lungeAttackTime)
+            {
+                lunging = false;
+                lungeATDelta = 0f;
+                swordHitbox.SetActive(false);
+            }
+        }
+
     }
 
 
@@ -112,6 +138,13 @@ public class PlayerScript : MonoBehaviour
         {
             PlayerDeath();
         }
+    }
+
+    public void AddImpact(Vector3 dir, float force)
+    {
+        dir.Normalize();
+        if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
+        impact += dir.normalized * force / mass;
     }
 
 
@@ -155,6 +188,13 @@ public class PlayerScript : MonoBehaviour
     {
         swordHitbox.SetActive(true);
         swordAttack = true;
+    }
+
+    public void OnFireSwordLunge()
+    {
+        lunging = true;
+        gravityY = 0f;
+        AddImpact(transform.forward, lungeForce);
     }
 
 }

@@ -38,6 +38,14 @@
                     "interactions": ""
                 },
                 {
+                    "name": "FireSwordLunge",
+                    "type": "Button",
+                    "id": "b43b21a0-2e2c-4265-b8bf-6a3a86b9a785",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
                     "name": "Jump",
                     "type": "Button",
                     "id": "b1cf87bf-0f13-4052-aaab-611a10d2aa96",
@@ -198,6 +206,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1da2adb-d026-42a0-8d99-d7bf0689eaad",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireSwordLunge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
