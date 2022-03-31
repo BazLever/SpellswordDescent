@@ -7,13 +7,18 @@ public class Enemy : MonoBehaviour
 {
     public float enemySpeed;
 
+    public bool ranged;
     NavMeshAgent navAgent;
 
 
     void Start()
     {
-        navAgent = gameObject.GetComponent<NavMeshAgent>();
-        navAgent.speed = enemySpeed;
+        if (!ranged)
+        {
+            navAgent = gameObject.GetComponent<NavMeshAgent>();
+            navAgent.speed = enemySpeed;
+        }
+
 
 
     }
