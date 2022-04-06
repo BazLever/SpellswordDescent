@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 
@@ -195,6 +196,11 @@ public class PlayerScript : MonoBehaviour
         lunging = true;
         gravityY = 0f;
         AddImpact(transform.forward, lungeForce);
+    }
+
+    public void OnRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

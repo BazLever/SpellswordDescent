@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - DeathBox
+  - Crystal
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Player
   - Enemy
   - IgnoreBullet
-  - 
+  - Fireball
   - 
   - 
   - 
