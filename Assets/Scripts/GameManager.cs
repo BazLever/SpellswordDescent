@@ -27,15 +27,22 @@ public class GameManager : MonoBehaviour
 
     [Header("Timer and Ranks")]
     public bool timerRunning;
+    [Space(20)]
     public float sssTime;
+    [Space(10)]
     public float ssTime;
+    [Space(10)]
     public float sTime;
+    [Space(10)]
     public float aTime;
     public int aKills;
+    [Space(10)]
     public float bTime;
     public int bKills;
+    [Space(10)]
     public float cTime;
     public int cKills;
+    [Space(10)]
     public int finalRank;
 
 
