@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8936972641224380988}
   m_Layer: 0
-  m_Name: Stairs_Shallow_Thin 1
+  m_Name: Stairs_Tall_Thin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20, y: 17, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8226970922341445481}
   m_Father: {fileID: 0}
@@ -50,7 +51,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8226970922341445481
 Transform:
@@ -62,6 +63,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8936972641224380988}
   m_RootOrder: 0
@@ -259,7 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Shape:
-    id: 0
+    rid: 0
   m_Size: {x: 5, y: 2, z: 5}
   m_Rotation: {x: 0, y: 0, z: 0.7071067, w: -0.7071067}
   m_PivotLocation: 1
@@ -269,8 +271,9 @@ MonoBehaviour:
     m_Center: {x: -2.2890503, y: 2.6093268, z: -2.8187318}
     m_Extent: {x: 1, y: 2.4999995, z: 2.5}
   references:
-    version: 1
-    00000000:
+    version: 2
+    RefIds:
+    - rid: 0
       type: {class: Prism, ns: UnityEngine.ProBuilder.Shapes, asm: Unity.ProBuilder}
 --- !u!23 &836173966982430825
 MeshRenderer:
@@ -292,7 +295,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 6ba21f8ac51ad384c9311a95cb42a084, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
