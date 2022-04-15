@@ -200,7 +200,9 @@ public class PlayerScript : MonoBehaviour
 
     public void OnRestart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(0);
     }
 
 }
