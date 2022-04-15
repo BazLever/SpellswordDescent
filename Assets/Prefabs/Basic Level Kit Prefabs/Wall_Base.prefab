@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1318251269151016139}
   - {fileID: 5953371225570863080}
@@ -93,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029810099082816676, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_VersionIndex
-      value: 4250
+      value: 4253
       objectReference: {fileID: 0}
     - target: {fileID: 3655233531834386399, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_Mesh
@@ -101,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3655233531834386399, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_VersionIndex
-      value: 4253
+      value: 4256
       objectReference: {fileID: 0}
     - target: {fileID: 4342852089339345793, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_Mesh
@@ -119,6 +120,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Tiny
       objectReference: {fileID: 0}
+    - target: {fileID: 7956307293168217647, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d8981ec8ba8ce24f85b2ae41f6a9cc2, type: 2}
+    - target: {fileID: 8565715547462370644, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d8981ec8ba8ce24f85b2ae41f6a9cc2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
 --- !u!4 &1318251269151016139 stripped
@@ -187,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029810099082816676, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_VersionIndex
-      value: 4253
+      value: 4256
       objectReference: {fileID: 0}
     - target: {fileID: 3655233531834386399, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_Mesh
@@ -195,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3655233531834386399, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_VersionIndex
-      value: 4256
+      value: 4259
       objectReference: {fileID: 0}
     - target: {fileID: 4342852089339345793, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
       propertyPath: m_Mesh
@@ -213,6 +222,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_Tiny (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7956307293168217647, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d8981ec8ba8ce24f85b2ae41f6a9cc2, type: 2}
+    - target: {fileID: 8565715547462370644, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9d8981ec8ba8ce24f85b2ae41f6a9cc2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ee098a0de8f67148bc663da47db213b, type: 3}
 --- !u!4 &5953371225570863080 stripped
